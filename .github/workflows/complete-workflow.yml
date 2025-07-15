@@ -16,7 +16,7 @@ jobs:
     - name: Run Sonar Analysis with cloud
       run:  mvn -B verify sonar:sonar -Dsonar.projectKey=anoopajit_java-reachability-playground2 -Dsonar.organization=anoopajit -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_ACTIONS }}
+        GITHUB_TOKEN: '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'
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   security:
     runs-on: ubuntu-latest
